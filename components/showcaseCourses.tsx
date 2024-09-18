@@ -1,13 +1,13 @@
 'use client'
 import React, {useEffect, useState} from 'react'
-import {people, projects} from "@/data";
+import {projects} from "@/data";
 import {PinContainer} from "@/components/ui/3DPin";
 import {AnimatedTooltip} from "@/components/ui/AnimatedTooltip";
 import {FaLocationArrow} from "react-icons/fa6";
 
 function ShowcaseCourses() {
     const [isClient, setIsClient] = useState(false);
-    const [withTech, setWithTech] = useState(false);
+
     useEffect(() => {
 
         setIsClient(true);
@@ -34,7 +34,7 @@ function ShowcaseCourses() {
                     A small showcase of {' '} <span className={'text-purple'}>{' '}Courses</span>
                 </h1>
                 <div className={'flex flex-wrap items-center p-4 justify-center gap-x-24 gap-y-8 lg:gap-y-8 mt-10'}>
-                    {projects.map(({id, title, des, img, iconLists, link}) => (
+                    {projects.map(({id, title, des, img, link}) => (
                         <div key={id}
                              className={' sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]  mb-10'}>
                             <PinContainer href={link} title={title}>
@@ -54,26 +54,9 @@ function ShowcaseCourses() {
                                         {des}
                                     </p>
                                 </div>
-                                {/* tech  stack img*/}
-                                {withTech && (
-                                    <div className={'flex items-center justify-between mt-7 mb-3'}>
-                                        <div className={'flex items-center '}>
-                                            {iconLists.map((icon, idx) => (
-                                                <div key={icon}
-                                                     className={'border border-white/[0.2] rounded-full bg-black-100 lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center'}
-                                                     style={{
-                                                         transform: `translateX(-${5 * idx * 2}px`,
-                                                     }}
-                                                >
-                                                    <img src={icon} alt={icon} className={'p-2'}/>
 
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                )}
 
-                                {/*user img*/}
+
                                 <div className={'flex items-center justify-between mt-7 mb-3'}>
                                     <div className={'flex items-center '}>
                                         <>

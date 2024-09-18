@@ -2,7 +2,7 @@ import React from 'react'
 import {LampComponent} from "@/components/ui/lamp";
 import {CardBody, CardContainer, CardItem} from "@/components/ui/3DCard";
 import {FaCheck} from "react-icons/fa";
-import {MovingBorderEffect} from "@/components/ui/MovingBorder";
+
 
 function Pricing() {
     return (

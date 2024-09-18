@@ -12,7 +12,7 @@ function HowWork() {
                 </h1>
                 <div
                     className="my-20 flex flex-col lg:flex-row items-center justify-center  gap-4 ">
-                    <Card title="SING UP " icon={<AceternityIcon order={'Step 1'}/>}
+                    <Card title="SING UP " icon={<EternityIcon order={'Step 1'}/>}
                           description={' create an account with easy steps using any of the options'}
                     >
                         <CanvasRevealEffect
@@ -20,7 +20,7 @@ function HowWork() {
                             containerClassName="bg-emerald-900"
                         />
                     </Card>
-                    <Card title="GET STARTED" icon={<AceternityIcon order={'Step 2'}/>}
+                    <Card title="GET STARTED" icon={<EternityIcon order={'Step 2'}/>}
                           description={'Get Started with your learning path , and generate a course from scratch'}
                     >
                         <CanvasRevealEffect
@@ -32,11 +32,11 @@ function HowWork() {
                             ]}
                             dotSize={2}
                         />
-                        {/* Radial gradient for the cute fade */}
+
                         <div
                             className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black-100/90"/>
                     </Card>
-                    <Card title="START LEARNING" icon={<AceternityIcon order={'Step 3'}/>}
+                    <Card title="START LEARNING" icon={<EternityIcon order={'Step 3'}/>}
                           description={'Start learning with the courses you have created , and share it with your friends'}>
                         <CanvasRevealEffect
                             animationSpeed={3}
@@ -101,7 +101,7 @@ const Card = ({
     );
 };
 
-const AceternityIcon = ({order}: { order: string }) => {
+const EternityIcon = ({order}: { order: string }) => {
     return (
         <div className={'flex items-center justify-center '}>
             <button
