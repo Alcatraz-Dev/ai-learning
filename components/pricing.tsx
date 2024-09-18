@@ -6,7 +6,7 @@ import {MovingBorderEffect} from "@/components/ui/MovingBorder";
 
 function Pricing() {
     return (
-        <section id={'pricing'} className={'pb-20'}>
+        <section id={'pricing'} className={'pb-24'}>
             <LampComponent/>
             <div className="flex flex-wrap items-center justify-center flex-col md:flex-row gap-8 -mt-60">
                 <CardContainer className="inter-var ">
