@@ -44,7 +44,7 @@ const Hero = () => {
             Unlock your potential with our AI-driven self-learning platform.
           </p>
 
-          <Link href="/sing-up">
+          <Link href="/">
             <MagicButton
               title="Get Start"
               icon={<FaLocationArrow />}

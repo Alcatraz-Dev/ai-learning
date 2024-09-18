@@ -132,7 +132,7 @@ export const FloatingNav = ({
                         <span className="hidden sm:block text-sm">{navItem.name}</span>
                     </Link>
                 ))}
-                <Link href={'/sing-in'}>
+                <Link href={'/'}>
                     <button
                         className="border text-sm font-medium relative  border-white/[0.2]  text-white px-4 py-2 rounded-full">
                         <span>Login</span>

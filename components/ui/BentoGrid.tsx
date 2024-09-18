@@ -8,7 +8,7 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import {GridGlobe} from "./GridGlobe";
 import {CardDemo} from "@/components/ui/AnimateCard";
-import {useRouter} from "next/navigation";
+// import {useRouter} from "next/navigation";
 
 
 export const BentoGrid = ({
@@ -54,7 +54,7 @@ export const BentoGridItem = ({
     const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
     const [clicked, setClicked] = useState(false);
-    const route = useRouter();
+    // const route = useRouter();
     const defaultOptions = {
         loop: clicked,
         autoplay: clicked,
@@ -67,7 +67,7 @@ export const BentoGridItem = ({
     const handleLogin = () => {
 
         setClicked(true);
-        route.push('/sing-in')
+        // route.push('/sing-in')
         setTimeout(() => {
             setClicked(false);
         }, 2000);
